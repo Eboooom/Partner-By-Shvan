@@ -30,7 +30,7 @@ client.on("ready", () => {
   let statuses = [
     `Servers: ${client.guilds.size} | Users: ${client.users.size}`,
     `PARTNER BOT `,
-    `BY : SHVAN`
+    `BY : EBO`
   ];
   setInterval(function() {
     let STREAMING = statuses[Math.floor(Math.random() * statuses.length)];
@@ -43,7 +43,7 @@ client.on("ready", () => {
 
 // ======== { • REPLAY • }======== //
 
-client.on("message", SHVAN => {
+client.on("message", EBO => {
   if (SHVAN.content.startsWith("reklam")) {
     SHVAN.author.send("**چاوەکەم ریـکـلامـەکـەم بـۆ بنێرە**");
     SHVAN.reply("**ریـکلامەکەم لە تایـبـەت بـۆ بنێرە**");
@@ -61,20 +61,25 @@ client.on("message", SHVAN => {
 
 // ======== { • REKLAM • }======== //
 
+
+if (talkedRecently.has(vex.author.id)) {
+      vex.author.send("Wait 1 minute before getting typing this again. - ");
+    } else {
+
 client.on("ready", () => {
-  var join = client.channels.get(""); /// ئاید ڤۆیس
+  var join = client.channels.get("718711099091976282"); /// ئاید ڤۆیس
   if (join) join.join();
 });
 
-client.on("message", shvan => {
+client.on("message", EBO => {
   if (shvan.channel.type === "dm") {
     if (shvan.content.startsWith("https://discord.gg/")) {
       shvan.author.send(`> **تـۆش ریکلام بۆ ئـەم سێرڤـەرە بکە **  
-https://discord.gg/9DBUNV7`); /// لینکە سیرڤەرە خۆت
+https://discord.gg/y4fU5KPHZr`); /// لینکە سیرڤەرە خۆت
 
-      client.channels.get("").send(////ئایدی ژوری تێکست
+      client.channels.get("727938071160553543").send(////ئایدی ژوری تێکست
  
-        `> Nerdra la layan <@${shvan.author.id}> 
+        `> Nerdra la layan <@${ebo.author.id}> 
 ${shvan.content}`
       );
     }
@@ -83,5 +88,5 @@ ${shvan.content}`
 
 // ======== { • TOKENN • }======== //
 
-client.login("لێرە تۆکین دانە");
+client.login("ODU4NzgwMjc3ODMxNzYxOTUw.YNjHdQ.qybmswWeCOWhrBemV3qr51Vl3VY");
 ////////////////
