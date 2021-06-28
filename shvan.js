@@ -62,10 +62,6 @@ client.on("message", SHVAN => {
 // ======== { • REKLAM • }======== //
 
 
-if (talkedRecently.has(vex.author.id)) {
-      vex.author.send("Wait 1 minute before getting typing this again. - ");
-    } else {
-
 client.on("ready", () => {
   var join = client.channels.get("718711099091976282"); /// ئاید ڤۆیس
   if (join) join.join();
